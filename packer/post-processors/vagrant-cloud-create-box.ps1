@@ -18,7 +18,7 @@ if (-not (Test-Path env:PACKER_VAGRANTCLOUD_TOKEN)) {
     # check cloud image
     # vagrant cloud search $IMAGE_NAME --short | Select-String -Pattern 'elegoev/ubuntu-21.04'
     Write-Host "image name = $IMAGE_NAME"
-    vagrant cloud box create "elegoev/$IMAGE_NAME"
+    vagrant cloud box create "elegoev/$IMAGE_NAME" --no-private
 
   } else {
     Write-Host "Wrong vagrant cloud token configured" -ForegroundColor Red
