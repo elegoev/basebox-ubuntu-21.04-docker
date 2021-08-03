@@ -3,7 +3,7 @@
     "src_image_name": "{{ env `SRC_IMAGE_NAME` }}",
     "src_image_version": "{{ env `SRC_IMAGE_VERSION` }}",
     "image_name": "ubuntu-21.04-docker",
-    "image_version": "4.0.{{timestamp}}",
+    "image_version": "1.0.{{timestamp}}",
     "cloud_token": "{{ env `PACKER_VAGRANTCLOUD_TOKEN` }}",
     "inspec_profile": "baseline-ubuntu-21.04-docker",
     "inspec_report": "/inspec/inspec_html_report/baseline-ubuntu-21.04-docker_report.html",
